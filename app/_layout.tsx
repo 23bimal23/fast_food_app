@@ -14,7 +14,7 @@ export default function RootLayout() {
     "OuickSand-SemiBold": require("../assets/fonts/Quicksand-SemiBold.ttf"),
     "QuickSand-Light": require("../assets/fonts/Quicksand-Light.ttf"),
 
-  })
+  });
   useEffect(() => {
     if (error) {
       console.warn("Error loading fonts:", error);
