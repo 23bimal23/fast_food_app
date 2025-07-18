@@ -1,12 +1,30 @@
-import { View, Text, Button } from 'react-native'
+import CustomButton from '@/components/CustomButton'
+import CustomInput from '@/components/CustomInput'
 import React from 'react'
-import { router } from 'expo-router'
+import { View } from 'react-native'
 
 const SignIn = () => {
   return (
-    <View>
-      <Text>SignIn</Text>
-      <Button title="Sign Up" onPress={() =>router.push("/sign-up")} />
+    <View className="gap-10 bg-white rounded-lg mt-5">
+      
+          <CustomInput
+          placeholder="Enter your Email"
+          value={''}
+          onChangeText={() => { }}
+          label="Email"
+          secureTextEntry={false}
+          keyboardType="email-address"
+        />
+            <CustomInput
+          placeholder="Enter your Password"
+          value={''}
+          onChangeText={() => { }}
+          label="Password"
+          secureTextEntry={true}
+        />
+        <CustomButton 
+        title='Sign In '
+        />
     </View>
   )
 }
